@@ -1,0 +1,60 @@
+.full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.affix {
+    padding:0px;
+    -webkit-transition:padding 1s linear;
+    -moz-transition:padding 1s linear;  
+    -o-transition:padding 1s linear;         
+    transition:padding 1s linear;  
+    animation-name: clrchangeprim;    
+    animation-duration: 1s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.23);
+}
+
+.affix-top {
+    padding: 10px 0px;
+    background-color: transparent ;
+    -webkit-transition:padding 1s linear;
+    -moz-transition:padding 1s linear;  
+    -o-transition:padding 1s linear;         
+    transition:padding 1s linear;  
+    animation-name: clrchangeprimrev;    
+    animation-duration: 1s;
+}
+@keyframes clrchangeprim {
+    from {
+        background-color: transparent;
+        box-shadow: 0;
+    }
+    to {
+        background-color: #f8f8f8;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.23);
+    }
+}
+@keyframes clrchangeprimrev {
+    from {
+        background-color: #f8f8f8;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.23);
+    }
+    to {
+        background-color: transparent;
+        box-shadow: 0;
+    }
+}
+.scrn70{
+    min-height: 70vh;
+}
+
+@keyframes blinking {
+    0%    { opacity: 0; }
+    50%   { opacity: 0; }
+    51%   { opacity: 1; }
+    100%  { opacity: 1; }
+}
+.change-text:after {
+    content: '_';
+    animation: blinking 1.2s infinite;
+}

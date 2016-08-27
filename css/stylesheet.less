@@ -1,0 +1,95 @@
+
+@bg-clrprim: #523794;
+@clrprim:#1E88E5;
+
+body{
+    background-color: @bg-clrprim;
+    font-family: 'Lato', sans-serif;
+}
+.navbar-default{
+    border-bottom: 0px;
+    img{
+        height: 30px;
+        width: 30px;
+    }
+    .navbar-nav {
+        li{
+            a:hover{
+                transition: background-color 0.5s ease-in;
+                border-bottom: 2px solid @clrprim;
+            }
+            &.active{
+                > a {
+                    border-bottom: 2px solid @clrprim;
+                }
+            }
+        }
+    }
+}
+#google-map{
+    display: inline;
+    float: left;	
+    width: 100%;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+.carousel-control span{
+    color: @clrprim;
+}
+/*.round-box{
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    background-color: rgba(234,37,42,0.8);
+    color: #fff;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    transition: background-color .5s cubic-bezier(0, 0, .7, 1);
+    &:hover{
+        background-color: rgba(234,37,42,1);
+    }
+}*/
+#container2{
+    height: 100vh; 
+    background-image: url('../img/Marketing-Technology.jpg.jpg')
+}
+#container4{
+    height: 100vh;
+    background-image: url('../img/marketing-page.jpg')
+}
+.carousel-caption {
+    top: 50px;
+    bottom: auto;
+}
+#vcpitem1{
+    background-color: #fff;
+    .small-caption{
+        text-align: left;
+        font-size: 30px;
+        color: #000;
+        text-shadow: none;
+        text-transform: lowercase;
+    }
+    .change-text {
+        text-align: left;
+        font-size: 40px;
+        color: @clrprim;
+        text-shadow: none;
+        text-transform: lowercase;
+    }
+    .design_box{
+        float: right;
+        bottom: 0px;
+        height: 200px;
+        width: 200px;
+        background-color: #2196F3;
+        span{
+            font-size: 100px;
+
+        }
+
+    }
+}
