@@ -6,13 +6,9 @@
 
 
 $(document).ready(function () {
-    $('.carousel').carousel();
-//    $('#playButton').click(function () {
-//        $('#mycarousel').carousel('cycle');
-//    });
-//    $('#pauseButton').click(function () {
-//        $('#mycarousel').carousel('pause');
-//    });
+    $('.carousel').carousel({
+        interval: 50000,
+    });
 
 });
 
@@ -36,25 +32,16 @@ $(window).on('resize', function () {
     $wHeight = $(window).height();
     $item.height($wHeight);
 });
-
-$('.carousel').carousel({
-    interval: 50000,
+$(function() {
+		var selectedClass = "";
+		$(".fil-cat").click(function(){ 
+		selectedClass = $(this).attr("data-rel"); 
+     $("#portfolio").fadeTo(100, 0.1);
+		$("#portfolio div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
+    setTimeout(function() {
+      $("."+selectedClass).fadeIn().addClass('scale-anm');
+      $("#portfolio").fadeTo(300, 1);
+    }, 300); 
+		
+	});
 });
-
-(function () {
-
-    var parallax = document.querySelectorAll(".parallax"),
-            speed = 0.5;
-
-    window.onscroll = function () {
-        [].slice.call(parallax).forEach(function (el, i) {
-
-            var windowYOffset = window.pageYOffset,
-                    elBackgrounPos = "0 " + (windowYOffset * speed) + "px";
-
-            el.style.backgroundPosition = elBackgrounPos;
-
-        });
-    };
-
-})();

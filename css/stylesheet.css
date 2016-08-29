@@ -44,10 +44,6 @@
         box-shadow: 0;
     }
 }
-.scrn70{
-    min-height: 70vh;
-}
-
 @keyframes blinking {
     0%    { opacity: 0; }
     50%   { opacity: 0; }

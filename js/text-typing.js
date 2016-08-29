@@ -40,7 +40,7 @@ function deleteWord() {
     // Remove a charachter
     textEl.innerHTML = currentWord.substring(0, currentLength - 1);
 
-    setTimeout(deleteWord, 200);
+    setTimeout(deleteWord, 70);
 }
 
 function addNextWord() {
@@ -58,7 +58,7 @@ function addNextWord() {
     // add a charachter
     textEl.innerHTML = nextWord.substring(0, currentLength + 1);
 
-    setTimeout(addNextWord, 200);
+    setTimeout(addNextWord, 70);
 
 
 }

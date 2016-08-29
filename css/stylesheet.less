@@ -1,10 +1,11 @@
 
-@bg-clrprim: #523794;
+@bg-clrprim: #fff;
 @clrprim:#1E88E5;
 
 body{
     background-color: @bg-clrprim;
     font-family: 'Lato', sans-serif;
+    color: #888888;
 }
 .navbar-default{
     border-bottom: 0px;
@@ -31,7 +32,6 @@ body{
     float: left;	
     width: 100%;
 }
-
 .carousel-control.left, .carousel-control.right {
     background-image: none
 }
@@ -52,14 +52,6 @@ body{
         background-color: rgba(234,37,42,1);
     }
 }*/
-#container2{
-    height: 100vh; 
-    background-image: url('../img/Marketing-Technology.jpg.jpg')
-}
-#container4{
-    height: 100vh;
-    background-image: url('../img/marketing-page.jpg')
-}
 .carousel-caption {
     top: 50px;
     bottom: auto;
@@ -88,8 +80,42 @@ body{
         background-color: #2196F3;
         span{
             font-size: 100px;
-
+            padding-top: 50px;
         }
-
     }
+}
+section{
+    padding: 100px 0px;
+}
+h3{
+    color: @clrprim;
+    text-transform: uppercase;
+}
+#portfolio {  
+    margin: 1rem 0;
+    -webkit-column-count: 3; 
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+    -webkit-column-width: 33.33333333333333%;
+    -moz-column-width: 33.33333333333333%;
+    column-width: 33.33333333333333%;
+}
+
+.tile { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+    img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+}
+.scale-anm {
+    transform: scale(1);
 }
