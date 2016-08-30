@@ -1,6 +1,6 @@
 
 @bg-clrprim: #fff;
-@clrprim:#1E88E5;
+@clrprim: #2196F3;
 
 body{
     background-color: @bg-clrprim;
@@ -26,11 +26,6 @@ body{
             }
         }
     }
-}
-#google-map{
-    display: inline;
-    float: left;	
-    width: 100%;
 }
 .carousel-control.left, .carousel-control.right {
     background-image: none
@@ -118,4 +113,60 @@ h3{
 }
 .scale-anm {
     transform: scale(1);
+}
+#contact{
+    dt{
+        color: @clrprim;
+        font-size: 18px;
+        float: left;
+        width: 120px;
+        margin: 0px;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+    dd{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .drop-us-a-line{
+        color: #616161;
+        form {
+            width: 540px;
+            padding: 60px;
+            height: 380px;
+            background: url(../img/footer-bg.jpg);
+            h2 {
+                font-size: 24px;
+                line-height: 30px;
+                -webkit-font-smoothing: antialiased;
+            }
+            label {
+                width: 118px;
+                float: left;
+                line-height: 35px;
+            }
+            input, textarea {
+                width: 300px;
+                height: 30px;
+                background: #fff;
+                border: 1px solid #73c5e1;
+                border-radius: 3px;
+                color: #03A9F4;
+                font-size: 13px;
+                padding: 0 10px;
+                margin: 0 0 5px 0;
+            }
+            textarea {
+                resize: none;
+                height: 70px;
+                padding: 10px;
+            }
+            input.submit {
+                float: right;
+                width: 160px;
+                height: 35px;
+                background: #fff;
+            }
+        }
+    }
 }
