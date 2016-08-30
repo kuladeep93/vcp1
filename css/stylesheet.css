@@ -80,3 +80,64 @@
 .client-table li:last-child{
     margin-right: 0px;
 }
+.tile1-wrap {
+    position: absolute;
+    width: 660px;
+    height: 440px;
+    margin: 0;
+    box-shadow: 0px 0px 10px 4px rgba(241, 241, 241, 0.59);
+    background: #F9FFFF;
+}
+.tile1 {
+    position: absolute;
+    top: 0;
+    width: 220px;
+    height: 220px;
+    background: #FFF;
+    border: 1px solid #F1F1F1;
+    list-style: none;
+    text-align: center;
+    -webkit-transition: .3s;
+    transition: .3s;
+    z-index: 0;
+}
+
+.tile1:nth-of-type(1),
+.tile1:nth-of-type(4) {
+    left: 0;
+}
+
+.tile1:nth-of-type(2),
+.tile1:nth-of-type(5) {
+    left: 220px;
+}
+
+.tile1:nth-of-type(3),
+.tile1:nth-of-type(6) {
+    left: 440px;
+}
+
+.tile1:nth-of-type(4),
+.tile1:nth-of-type(5),
+.tile1:nth-of-type(6) {
+    top: 220px;
+}
+
+.tile1__inner {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 30px 5px;
+    text-decoration: none;
+    color: #BEC2C3;
+}
+
+.tile1:hover {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 40px 1px rgba(241, 241, 241, 0.48);
+    z-index: 10;
+}
