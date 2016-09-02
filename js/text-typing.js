@@ -1,4 +1,4 @@
-var words = ['static design', 'dynamic design', 'responsive design', 'graphic design', 'flash design', 'logo design'],
+var words = ['STATIC DESIGN', 'DYNAMIC DESIGN', 'RESPONSIVE DESIGN', 'GRAPHIC DESIGN', 'FLASH DESIGN', 'LOGO DESIGN'],
         currentStep = 0,
         textEl = document.querySelector('.change-text'),
         oldWord = '';
