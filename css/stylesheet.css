@@ -81,6 +81,9 @@ h3 {
     background-color: #26262c;
     color: #BEC2C3;
 }
+/*******************************************
+contact section content
+*************************************************/
 #contact {
     background-image: url('../img/bg-map.png');
 }
@@ -181,6 +184,10 @@ h3 {
     height: 35px;
     background: #fff;
 }
+
+/******************************************
+footer section
+**********************************************/ 
 #footer {
     border-top: 2px solid #616161;
     background-image: url('../img/pw_maze_black.png');
@@ -281,7 +288,7 @@ h3 {
     width: 660px;
     height: 440px;
     margin: 0;
-    /*box-shadow: 0px 0px 10px 4px rgba(241, 241, 241, 0.59);*/
+    box-shadow: 0px 0px 10px 4px rgba(241, 241, 241, 0.59);
     background: #26262c;
 }
 .tile1 {
@@ -290,7 +297,7 @@ h3 {
     width: 220px;
     height: 220px;
     background: #26262c;
-    border: 1px solid #F1F1F1;
+    /*border: 1px solid #F1F1F1;*/
     list-style: none;
     text-align: center;
     -webkit-transition: .3s;
@@ -334,6 +341,6 @@ h3 {
     transform-origin: center;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    /*box-shadow: 0px 0px 40px 1px rgba(241, 241, 241, 0.48);*/
+    box-shadow: 0px 0px 40px 1px rgba(241, 241, 241, 0.48);
     z-index: 10;
 }
