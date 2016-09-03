@@ -2,6 +2,7 @@ body {
     background-color: #fff;
     font-family: 'Lato', sans-serif;
     color: #888888;
+    padding-top: 50px;
 }
 h1,h2,h3 {
     color: #2196F3;
@@ -16,11 +17,18 @@ h1 {
     border-bottom: 0px;
 }
 .navbar-default img {
-    height: 45px;
-    width: 45px;
+    height: 60px;
+    width: 60px;
+    float: left;
 }
 .navbar-brand{
-    padding: 5px;   
+    padding: 2px;   
+    display: inline;
+}
+.navbar-brand span{
+    padding: 20px 0;
+    float: right;
+    color: #2196F3;
 }
 .navbar-default .navbar-nav li a:hover {
     transition: background-color 0.5s ease-in;
@@ -54,13 +62,13 @@ h1 {
     font-size: 45px;
     color: #000;
     text-shadow: none;
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 #vcpitem1 .change-text {
     font-size: 55px;
     color: #2196F3;
     text-shadow: none;
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 #vcpitem1 .design_box {
     float: right;
@@ -223,7 +231,7 @@ footer section
 
 .affix-top {
     padding: 10px 0px;
-    background-color: transparent ;
+    background-color: #fff ;
     -webkit-transition:padding 1s linear;
     -moz-transition:padding 1s linear;  
     -o-transition:padding 1s linear;         
@@ -351,4 +359,14 @@ footer section
     transform: scale(1.1);
     box-shadow: 0px 0px 40px 1px rgba(241, 241, 241, 0.48);
     z-index: 10;
+}
+#design p,#development p,#marketing p{
+    text-align: justify;
+}
+#design section,#development section,#marketing section{
+    padding-top: 40px;
+    padding-bottom: 0px;
+}
+#footer p{
+    text-align: center;
 }
