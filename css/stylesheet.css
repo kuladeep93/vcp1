@@ -223,6 +223,10 @@ footer section
     background-position: center;
     background-repeat: no-repeat;
 }
+#histats_counter{
+    height: 0px;
+    float: right;
+}
 .affix {
     padding:0px;
     -webkit-transition:padding 1s linear;
